@@ -1,7 +1,11 @@
 body {
-    background: rgb(255, 255, 255);
-    color: rgb(199, 0, 0);
-    padding: 10px;
+  background-image: url(images/Tame_Impala_-_Currents.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 10% 35%;
+background-color: #7851a9;
+color: rgb(199,0,0);
+    padding: 0px;
     font-family: Arial, sans-serif;
 }
 
@@ -68,9 +72,9 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 4px rgb(106, 92, 92) ridge;
-    padding: 80px;
-    margin-top: 2px;
+    border: 1px rgb(106, 92, 92) ridge;
+    padding: 0px;
+    margin-top: 0px;
 
 }
 
