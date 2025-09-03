@@ -5,7 +5,7 @@ body {
   background-position: 10% 35%;
 background-color: #7851a9;
 color: rgb(199,0,0);
-    padding: 0px;
+    padding: 10px;
     font-family: Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ nav {
     margin: 0 auto;
     display: flex;
     padding: 10px;
-    margin-bottom: 20px;
+  
 }
 
 h1 {
@@ -72,9 +72,9 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 1px rgb(106, 92, 92) ridge;
-    padding: 0px;
-    margin-top: 0px;
+    border: 4px rgb(106, 92, 92) ridge;
+    padding: 8px;
+    margin-top: 20px;
 
 }
 
