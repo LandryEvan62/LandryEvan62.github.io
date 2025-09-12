@@ -42,15 +42,19 @@ createPlatform(650, 100, 5, 520, "orange");
 createPlatform(750, 490, 100, 10, "pink");
 createPlatform(1100, 200, 15, 300, "yellow");
 createPlatform(950, 370, 100, 10, "pink");
-createPlatform(950, 370, 100, 10, "pink");
+createPlatform(750, 240, 100, 10, "pink");
+createPlatform(1100, 200, 150, 30, "yellow");
     // TODO 3 - Create Collectables
 createCollectable("skull", 250, 675, 0, 0);
 createCollectable("aspd", 180, 350, 0, 0);
 createCollectable("mannco", 1300, 700, 0, 0);
-    
+    createCollectable("foury", 1180, 150, 0, 0);
     // TODO 4 - Create Cannons
-
-
+createCannon("top", 260, 3000);
+createCannon("right", 300, 2000);
+createCannon("right", 650, 2300);
+createCannon("bottom", 650, 4000);
+createCannon("bottom", 1080, 3000);
     
     
     //////////////////////////////////

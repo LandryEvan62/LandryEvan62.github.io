@@ -101,4 +101,5 @@ var collectableList = {
   skull: { image: "images/collectables/skull.png" },
   aspd: { image: "images/collectables/aspd.png" },
   mannco: { image: "images/collectables/mannco.png" },
+  foury: { image: "images/collectables/foury.png" },
 };
