@@ -4,7 +4,7 @@ body {
   background-size: 100%;
   background-position: 10% 30%;
 background-color: #7851a9;
-color: rgb(255, 94, 0);
+color: rgb(0, 38, 255);
     padding: 10px;
     font-family: Arial, 'Frutiger', sans-serif;
 }
@@ -18,7 +18,7 @@ color: rgb(255, 94, 0);
 /* navigation menu */
 nav {
 box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border-radius: 10px;
@@ -115,6 +115,16 @@ h2, h3 {
     margin: 0px;
 }
 
+h4 {
+  margin-top: 8px;
+  font-size: 20px;
+  color:black
+}
+
+p1 {
+  font-size: 14px;
+  color:green
+}
 
 /* Portfolio styles */
 .content h1 {
