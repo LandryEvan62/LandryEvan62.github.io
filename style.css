@@ -32,14 +32,7 @@ border: 1px soild rgba(255, 255, 255, 0.18)
   
 }
 
-/*@keyframes shine {
-  0% {
-    background-position: 20% center; 
-  }
-  100% {
-    background-position: -20% center;
-  }
-}*/
+
 
 h1 {
     display: flex;
@@ -48,11 +41,7 @@ h1 {
     flex: 1;
     margin: 0;
     
-    /*background: linear-gradient(to right, #b00f0f 0%, #ffffff 50%, #f0f0f0 100%);
-    background-size: 300% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: shine 3s ease-in-out infinite;*/
+  
     
 }
 
@@ -122,12 +111,52 @@ h4 {
 }
 
 p1 {
-  flex: 1;
-  color:green
+  color:green;
 }
 
 p2 {
+  color: green;
+  font-size: 15px;
+}
+
+p3 {
   color:red;
+  padding: 37px;
+}
+p4 {
+  color:red;
+  font-size: 15px;
+  padding: 30px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% center; 
+  }
+  100% {
+    background-position: -100% center;
+  }
+}
+
+p5 {
+  color:black;
+  padding: 10px;
+  background: linear-gradient(to right, #ffffff 0%, #232222 50%, #000000 100%);
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 5s ease-in-out infinite;
+}
+
+p6 {
+  color:black;
+  font-size: 15px;
+  padding: 15px;
+ background: linear-gradient(to right, #ffffff 0%, #232222 50%, #000000 100%);
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 5s ease-in-out infinite;
 }
 
 /* Portfolio styles */
