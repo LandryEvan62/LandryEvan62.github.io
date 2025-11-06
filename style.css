@@ -159,6 +159,53 @@ p6 {
     animation: shine 5s ease-in-out infinite;
 }
 
+p7 {
+  color: black;
+}
+
+p8 {
+  color:black;
+  font-size: 10px;
+}
+
+p9 {
+  color:black;
+  font-size: 12px;
+}
+
+p10 {
+  padding: 25px;
+  color: rgb(66, 0, 128);
+}
+
+p11 {
+  color: rgb(66, 0, 128);
+  font-size: 10px;
+}
+
+p12 {
+  padding: 84px;
+  color: rgb(66, 0, 128);
+  font-size: 12px;
+}
+
+p13,p14,p15 {
+  color: black;
+}
+
+p13 {
+  padding: 46px;
+}
+
+p14 {
+  padding: 4px;
+  font-size: 15px
+}
+
+p15 {
+  font-size: 9px
+}
+
 /* Portfolio styles */
 .content h1 {
   color: rgb(208, 217, 88);
