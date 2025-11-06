@@ -2,8 +2,8 @@ body {
   background-image: url(images/YAY.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 10% 30%;
-background-color: #7851a9;
+  /*background-position: 10% 30%;*/
+background-color: #1e750f;
 color: rgb(0, 38, 255);
     padding: 10px;
     font-family: Arial, 'Frutiger', sans-serif;
@@ -108,6 +108,11 @@ h4 {
   margin-top: 8px;
   font-size: 20px;
   color:black
+}
+
+h5 {
+  color:black;
+  font-size: 20px;
 }
 
 p1 {
