@@ -100,7 +100,6 @@ game.checkCirclePosition(circles[4]);*/
         } if (circle.y > canvas.height) {
             circle.y = 0
         } if (circle.y < 0) {
-            circle.y = canvas.height
         }
 
 

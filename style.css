@@ -116,11 +116,11 @@ h5 {
 }
 
 p1 {
-  color:green;
+  color:lawngreen;
 }
 
 p2 {
-  color: green;
+  color: lawngreen;
   font-size: 15px;
 }
 
@@ -210,6 +210,45 @@ p14 {
 p15 {
   font-size: 9px
 }
+
+p16 {
+  color:green;
+  margin-right: 80px;
+}
+
+p17 {
+  color:green;
+  font-size: 14px;
+  
+}
+
+p18 {
+  color:rgb(255, 0, 0);
+  font-size: 16px;
+}
+
+p19 {
+  color:red;
+  font-size: 13px;
+  padding: 164px;
+  margin-top: 20px;
+}
+
+p20 {
+  color:red;
+  font-size: 15px;
+  margin-right: 32px;
+}
+
+p21 {
+  color:white;
+  margin-left: 16px;
+}
+
+p22 {
+  color: white;
+}
+
 
 /* Portfolio styles */
 .content h1 {
