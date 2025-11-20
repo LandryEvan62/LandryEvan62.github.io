@@ -241,13 +241,22 @@ p20 {
 }
 
 p21 {
-  color:white;
-  margin-left: 16px;
+  margin-left: 10px;
 }
 
 p22 {
   color: white;
+  font-size: 15px;
 }
+
+.whi {
+  color: white;
+}
+
+.blakc {
+  color: black;
+}
+
 
 
 /* Portfolio styles */
