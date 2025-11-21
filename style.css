@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   /*background-position: 10% 30%;*/
-background-color: #1e750f;
+background-color: #8b0000;
 color: rgb(0, 38, 255);
     padding: 10px;
     font-family: Arial, 'Frutiger', sans-serif;
@@ -151,6 +151,7 @@ p5 {
     background-clip: text;
     -webkit-background-clip: text;
     animation: shine 5s ease-in-out infinite;
+    font-style:italic;
 }
 
 p6 {
@@ -162,6 +163,7 @@ p6 {
     background-clip: text;
     -webkit-background-clip: text;
     animation: shine 5s ease-in-out infinite;
+    font-style:italic;
 }
 
 p7 {
@@ -212,14 +214,14 @@ p15 {
 }
 
 p16 {
-  color:green;
+  color:white;
   margin-right: 80px;
 }
 
 p17 {
-  color:green;
+  color:white;
   font-size: 14px;
-  
+  font-style:italic;
 }
 
 p18 {
@@ -247,10 +249,12 @@ p21 {
 p22 {
   color: white;
   font-size: 15px;
+  font-style: italic;
 }
 
 .whi {
   color: white;
+  font-style:italic;
 }
 
 .blakc {
