@@ -80,16 +80,16 @@ background.addChild(tree);
             var groundY = ground.y;
             
             // TODO 3: Part 2 - Move the tree!
-        tree.x = tree.x + 10;
+        tree.x = tree.x - 10;
 
-if (tree.x > canvasWidth) {
-  tree.x = canvasWidth - canvasWidth;
+if (tree.x < -200) {
+  tree.x = canvasWidth + 1000;
 }
             
             // TODO 4: Part 2 - Parallax
            for (var i = 0; i < buildings.length; i++) {
             var eachElement = buildings[i];
-            eachElement = buildings.x - 10;
+            eachElement = buildings.x + 10;
             if (buildings.x < -100){
                 buildings.x = canvasWidth - canvasWidth
             }
