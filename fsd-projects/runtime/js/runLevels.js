@@ -58,10 +58,21 @@ createEnemy(400, groundY - 10);
 createEnemy(800, groundY - 100);
 createEnemy(1200, groundY - 50);
 
-function createReward() {
-  
-}
+function createReward(x, y) {
+var reward = game.createGameItem("reward", 25);
+var greenSquare = draw.rect(50, 50, "green");
+greenSquare.x = -25;
+greenSquare.y = -25;
+reward.addChild(greenSquare);
+reward.x = x;
+reward.y = groundY - y;
+game.addGameItem(reward);
+reward.velocityX = -1;
+reward.rotationalVelocity = 1;
+reward.onPlayerCollision = function () {game.changeIntegrity(10)};
 
+}
+createReward(300, 100);
     function startLevel() {
       // TODO 13 goes below here
 
