@@ -61,7 +61,6 @@ background.addChild(moon);
   background.addChild(building);
   buildings.push(building);
 }
-    
             // TODO 3: Part 1 - Add a tree
            tree = draw.bitmap("img/tree.png");
 tree.x = 0;
