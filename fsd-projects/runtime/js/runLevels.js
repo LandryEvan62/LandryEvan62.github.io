@@ -60,7 +60,7 @@ createEnemy(1200, groundY - 50);
 
 function createReward(x, y) {
 var reward = game.createGameItem("reward", 25);
-var greenSquare = draw.rect(50, 50, "green");
+var greenSquare = draw.rect(50, 50, "lawngreen");
 greenSquare.x = -25;
 greenSquare.y = -25;
 reward.addChild(greenSquare);
@@ -69,11 +69,29 @@ reward.y = groundY - y;
 game.addGameItem(reward);
 reward.velocityX = -1;
 reward.rotationalVelocity = 1;
-reward.onPlayerCollision = function () {game.changeIntegrity(10)};
+reward.onPlayerCollision = function () {game.changeIntegrity(100), reward.fadeOut();};
+
 
 }
-createReward(300, 100);
-    function startLevel() {
+createReward(300, 50);
+
+function createMarker(x, y){
+  var marker = game.createGameItem("marker", 25);
+  var blueSquare = draw.rect(50, 50, "blue");
+  blueSquare.x = -25;
+  blueSquare.y = -25;
+  marker.addChild(blueSquare);
+  marker.x = x;
+  marker.y = groundY - y;
+  game.addGameItem(marker);
+  marker.velocityX = -1;
+  marker.rotationalVelocity = 1;
+  marker.onPlayerCollision = function () {game.changeIntegrity(100), marker.fadeOut(), startLevel();};
+  }
+
+createMarker(1300, 50)
+
+function startLevel() {
       // TODO 13 goes below here
 
 
