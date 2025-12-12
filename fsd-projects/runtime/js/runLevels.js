@@ -26,16 +26,18 @@ function createSawBlade(x, y){
 var damageFromObstacle = 10;
 var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
 sawBladeHitZone.x = x;
-sawBladeHitZone.y = 250;
+sawBladeHitZone.y = y;
 game.addGameItem(sawBladeHitZone);
+sawBladeHitZone.rotationalVelocity = 10;
+sawBladeHitZone.velocityX = -5;
 var obstacleImage = draw.bitmap("img/sawblade.png");
 sawBladeHitZone.addChild(obstacleImage);    
 obstacleImage.x = -25
 obstacleImage.y = -25
 }
-createSawBlade(400, 200);
-createSawBlade(250, 300);
-createSawBlade(350, 100);
+createSawBlade(400, groundY - 20);
+createSawBlade(750, groundY - 50);
+createSawBlade(950, groundY - 70);
 
 
 function createEnemy(x, y) {
@@ -45,17 +47,16 @@ redSquare.x = -25;
 redSquare.y = -25;
 enemy.addChild(redSquare);
 enemy.x = x;
-enemy.y = groundY - 50;
+enemy.y = y;
 game.addGameItem(enemy);
 enemy.velocityX = -1;
-enemy.rotationalVelocity = 1;
 enemy.onPlayerCollision = function () {game.changeIntegrity(-10)};
 enemy.onProjectileCollision = function () {game.increaseScore(100);
 enemy.fadeOut();};
 
 }
-createEnemy(400, groundY - 10);
-createEnemy(800, groundY - 100);
+createEnemy(500, groundY - 55);
+createEnemy(800, groundY - 50);
 createEnemy(1200, groundY - 50);
 
 function createReward(x, y) {
@@ -86,13 +87,23 @@ function createMarker(x, y){
   game.addGameItem(marker);
   marker.velocityX = -1;
   marker.rotationalVelocity = 1;
-  marker.onPlayerCollision = function () {game.changeIntegrity(100), marker.fadeOut(), startLevel();};
+  marker.onProjectileCollision = function () {;};
+  marker.onPlayerCollision = function () {marker.fadeOut();};
   }
 
 createMarker(1300, 50)
 
 function startLevel() {
       // TODO 13 goes below here
+/*var level = levelData[currentLevel]
+var levelObjects = level.gameItems
+for (var i = 0; i < levelObjects.length; i++) {
+  var eachElement = levelObjects[i];
+  createSawBlade(eachElement.x, eachElement.y);
+  createEnemy(eachElement.x, eachElement.y);
+  createReward(eachElement.x, eachElement.y);
+  createMarker(eachElement.x, eachElement.y);
+}*/
 
 
 
