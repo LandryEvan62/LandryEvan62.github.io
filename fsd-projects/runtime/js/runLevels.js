@@ -21,7 +21,6 @@ var runLevels = function (window) {
 
 
 function createSawBlade(x, y){
-  var average = (x + y) / 2
   var hitZoneSize = 25;
 var damageFromObstacle = 10;
 var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
@@ -35,9 +34,9 @@ sawBladeHitZone.addChild(obstacleImage);
 obstacleImage.x = -25
 obstacleImage.y = -25
 }
-createSawBlade(400, groundY - 20);
+/*createSawBlade(400, groundY - 20);
 createSawBlade(750, groundY - 50);
-createSawBlade(950, groundY - 70);
+createSawBlade(950, groundY - 70);*/
 
 
 function createEnemy(x, y) {
@@ -55,9 +54,9 @@ enemy.onProjectileCollision = function () {game.increaseScore(100);
 enemy.fadeOut();};
 
 }
-createEnemy(500, groundY - 55);
+/*createEnemy(500, groundY - 55);
 createEnemy(800, groundY - 50);
-createEnemy(1200, groundY - 50);
+createEnemy(1200, groundY - 50);*/
 
 function createReward(x, y) {
 var reward = game.createGameItem("reward", 25);
@@ -74,7 +73,7 @@ reward.onPlayerCollision = function () {game.changeIntegrity(100), reward.fadeOu
 
 
 }
-createReward(300, 50);
+/*createReward(300, 50);*/
 
 function createMarker(x, y){
   var marker = game.createGameItem("marker", 25);
@@ -91,11 +90,11 @@ function createMarker(x, y){
   marker.onPlayerCollision = function () {marker.fadeOut();};
   }
 
-createMarker(1300, 50)
+/*createMarker(1300, 50)*/
 
 function startLevel() {
       // TODO 13 goes below here
-/*var level = levelData[currentLevel]
+var level = levelData[currentLevel]
 var levelObjects = level.gameItems
 for (var i = 0; i < levelObjects.length; i++) {
   var eachElement = levelObjects[i];
@@ -103,7 +102,7 @@ for (var i = 0; i < levelObjects.length; i++) {
   createEnemy(eachElement.x, eachElement.y);
   createReward(eachElement.x, eachElement.y);
   createMarker(eachElement.x, eachElement.y);
-}*/
+}
 
 
 
