@@ -86,22 +86,23 @@ function createMarker(x, y){
   game.addGameItem(marker);
   marker.velocityX = -1;
   marker.rotationalVelocity = 1;
-  marker.onProjectileCollision = function () {;};
-  marker.onPlayerCollision = function () {marker.fadeOut();};
+  marker.x = 1200;
+  marker.y = 275;
+  marker.onPlayerCollision = function () {marker.fadeOut(), startLevel();};
   }
 
 /*createMarker(1300, 50)*/
 
 function startLevel() {
       // TODO 13 goes below here
-var level = levelData[currentLevel]
-var levelObjects = level.gameItems
+var level = levelData[currentLevel];
+var levelObjects = level.gameItems;
 for (var i = 0; i < levelObjects.length; i++) {
   var eachElement = levelObjects[i];
-  createSawBlade(eachElement.x, eachElement.y);
-  createEnemy(eachElement.x, eachElement.y);
-  createReward(eachElement.x, eachElement.y);
-  createMarker(eachElement.x, eachElement.y);
+  createSawBlade(eachElement.x, eachElement.y - 60);
+  createEnemy(eachElement.x, eachElement.y - 30);
+  createReward(1);
+  createMarker(1);
 }
 
 

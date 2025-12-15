@@ -15,11 +15,10 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "reward", "x": 800, "y": groundY - 60},
+          { hp: "reward", "x": 800, "y": groundY },
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
-          { type: "marker", "x": 2000, "y": 300 },
+          { end: "marker", "x": 1000, "y": groundY },
         ],
       },
       {
@@ -29,18 +28,18 @@ var makeLevelData = function (window) {
         gameItems: [
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
+          { end: "marker", "x": 1000, "y": 300 },
         ],
       },
             {
         name: "Robot madine",
-        number: 2,
+        number: 3,
         speed: -3,
         gameItems: [
           { hp: "reward", "x": 2000, "y": groundY - 60},
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
+          { end: "marker", "x": 1000, "y": 300 },
         ],
       },
     ];
