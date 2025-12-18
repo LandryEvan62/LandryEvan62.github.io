@@ -31,8 +31,8 @@ sawBladeHitZone.rotationalVelocity = 10;
 sawBladeHitZone.velocityX = -5;
 var obstacleImage = draw.bitmap("img/sawblade.png");
 sawBladeHitZone.addChild(obstacleImage);    
-obstacleImage.x = -25
-obstacleImage.y = -25
+obstacleImage.x = -25;
+obstacleImage.y = -25;
 }
 /*createSawBlade(400, groundY - 20);
 createSawBlade(750, groundY - 50);
@@ -67,6 +67,8 @@ reward.addChild(greenSquare);
 reward.x = x;
 reward.y = groundY - y;
 game.addGameItem(reward);
+reward.x = 500;
+reward.y = 270;
 reward.velocityX = -1;
 reward.rotationalVelocity = 1;
 reward.onPlayerCollision = function () {game.changeIntegrity(100), reward.fadeOut();};
