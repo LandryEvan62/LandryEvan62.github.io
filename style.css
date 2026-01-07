@@ -253,12 +253,12 @@ p22 {
 }
 
 .whi {
-  color: white;
-  font-style:italic;
+  color: rgb(175, 0, 58);
+  font-style:bold;
 }
 
 .blakc {
-  color: black;
+  color: orange;
 }
 
 
